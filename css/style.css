@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 52.5%;
+    line-height: 2rem;
+}
+
+body {
+    font-family: Haettenschwelirer;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+h1, h2, h3 {
+    font-family: Impact;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 6.3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+.calendar-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Calendar Head Section */
+
+.calendar-head {
+    width: 100%;
+    height: 500px;
+    background: url(../images/february.jpg);
+    background-position: right center;
+    background-origin: content-box; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-year {
+    font-size: 3.8rem;
+    color: #f8f8f8;
+    margin-right: 50px;
+}
+
+.calendar-month {
+    margin-left: 50px;
+    color: #6E1E19;
+}
+
+.calendar-week {
+    width: 100vw;
+    height: 100px;
+}
+
+.calendar-week-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100px;
+    padding: 20px;
+    background: #AD2F28;
+    text-align: center;
+    list-style-type: none;
+}
+
+.calendar-week-list li {
+    font-size: 3.4rem;
+    margin-top: 15%;
+}
+
+.calendar-body {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.calendar-day-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat( 200px);
+    grid-auto-rows: 200px;
+}
+
+.calendar-day {
+    border: 2px solid #ED4036;
+    list-style-type: none;
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank {
+    background: rgba(250, 68, 57, 0.3);
+}
+
+.calendar-day a {
+    display: block;
+    width: 60%;
+    height: 60%;
+    padding: 30%;
+    text-decoration: none;
+    color: #D43A31;
+}
+
+
+
+
+
